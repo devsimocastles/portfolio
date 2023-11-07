@@ -63,7 +63,7 @@ export function MobileView() {
                         <li><a href="#biografia">Sobre mí</a></li>
                         <li><a href="#lenguajes">Lenguajes</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
