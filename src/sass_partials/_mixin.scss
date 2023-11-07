@@ -1,0 +1,44 @@
+
+
+
+@mixin set_flex($ai:center, $jc:center, $fd:row,$fw:wrap){
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}
+
+
+@mixin build_arrow($color:$dark_purple){
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    path{
+        stroke: $color;
+        stroke-width: 15px;
+        fill: none;
+    }
+}
+
+
+@mixin build_bracket(){
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    background-image: url("../img/icons/bracket.svg");
+    background-repeat: no-repeat;
+    background-size: 270px;
+    background-position: center;
+}
+
+@mixin language-icon-animation(){
+    animation: bounce 2s ease infinite;
+    &:nth-of-type(1){animation-delay: .2s;}
+    &:nth-of-type(2){animation-delay: .1s;}
+    &:nth-of-type(3){animation-delay: .3s;}
+    &:nth-of-type(4){animation-delay: .4s;}
+    &:nth-of-type(5){animation-delay: .5s;}
+    &:nth-of-type(6){animation-delay: .6s;}
+}

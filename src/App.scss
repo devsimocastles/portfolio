@@ -1,0 +1,96 @@
+//============== SASS PARTIALS ====================
+
+    // STYLES FOR MOBILE VIEWPORT ////////
+    @use "./sass_partials/Mobile/mobile";
+    // STYLES FOR MOBILE VIEWPORT ////////
+    @use "./sass_partials/Desktop/desktop";
+    @import "./sass_partials/vars";
+    @import "./sass_partials/mixin";
+
+//=================================================
+
+//============= FONTS IMPORT ======================
+  // Montserrat
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+  //Bellota Text 
+  @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,400;0,700;1,400&display=swap');
+  //Bebas Neue
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+//=================================================  
+
+
+
+
+
+
+//============= CSS RESET ======================
+
+    *, *::before, *::after{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+//==============================================
+
+
+
+  //################### FOOTER STYLES #####################
+
+  footer {
+    height: 100vh;
+    background-color: $almost_black;
+
+    @include set_flex(center, center, column, wrap);
+    header {
+      color: $seasalt;
+      text-align: center;
+      @extend %montserrat;
+    }
+    .wrapper {
+      width: 80%;
+      max-width: 400px;
+      padding-bottom: 10em;
+      .arrows {
+        @include set_flex(center, space-around, row, nowrap);
+        .arrow-down {
+          background-image: url("./img/icons/ARROW.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 200px;
+          width: 200px;
+          rotate: -13deg;
+          filter: invert(1);
+          &:nth-of-type(2) {
+            transform: scaleX(-1);
+            rotate: 13deg;
+          }
+        }
+      }
+      .icons {
+        @include set_flex(center, space-between, row, nowrap);
+        a {
+          display: block;
+          &:nth-of-type(1):hover {
+            transform: scale(1.2) rotate(20deg);
+          }
+          &:nth-of-type(2):hover {
+            transform: scale(1.2) rotate(-20deg);
+          }
+        }
+        svg {
+          height: 100px;
+          width: auto;
+          path {
+            fill: $seasalt;
+          }
+        }
+      }
+    }
+    h4.credits {
+      color: $seasalt;
+      @extend %montserrat;
+    }
+  }
+
+  //#######################################################

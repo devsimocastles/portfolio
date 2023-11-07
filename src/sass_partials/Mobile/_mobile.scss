@@ -1,0 +1,311 @@
+@import "../../sass_partials/vars";
+@import "../mixin";
+@import "../inheritance";
+@import "../animation.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  position: relative;
+}
+
+.mobile {
+  overflow: hidden;
+  position: relative;
+  //&&&&&&&&&&&&&& HERO SECTION &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+  .hero-section {
+    background-image: url("../../img/hero-bg-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .content {
+      background-color: rgba(0, 0, 0, 0.45);
+      @include set_flex(stretch, space-between, column);
+      height: 100vh;
+      nav {
+        @include set_flex(center, space-between);
+        padding: 1em;
+        height: 5em;
+        .hamburger_menu {
+          svg {
+            width: 40px;
+            height: auto;
+            path {
+              stroke: $seasalt;
+            }
+          }
+        }
+        .logo {
+          width: 200px;
+          height: auto;
+        }
+      }
+      .title {
+        h1 {
+          font-family: $bebas;
+          color: $seasalt;
+          font-size: 38px;
+          text-align: center;
+        }
+      }
+      .arrow-down {
+        @include build_arrow($seasalt);
+      }
+    }
+
+    // LATERAL MENU //////////////////////////
+      .lateral-menu {
+        @extend %montserrat;
+        position: fixed;
+        left: -340px;
+        top: 0;
+        width: 340px;
+        height: 100vh;
+        background-color: $almost_black;
+        transition: .3s all;
+        transition-timing-function: cubic-bezier(.3,.51,.07,.94);
+        z-index: 99;
+        border: 2px solid $seasalt;
+  
+
+        &.active {
+          left: 0;
+        }
+
+
+
+        header {
+          padding: 2em;
+          padding-bottom: 5em;
+          @include set_flex(center, space-between, row);
+          img.logo {
+            width: 160px;
+            height: auto;
+          }
+          svg.close {
+            width: 25px;
+            height: auto;
+            &:hover {
+              cursor: pointer;
+            }
+            path {
+              fill: $seasalt;
+            }
+          }
+        }
+        .links {
+          margin-left: 2.5em;
+          li {
+            padding-bottom: 1.7em;
+            a {
+              color: $seasalt;
+              font-weight: bold;
+              font-size: 24px;
+              text-decoration: none;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+  }
+  //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+  //$$$$$$$$$$$$$$$$$$$ BIOGRAPHY SECTION $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+  .biography {
+    background-color: $light_yellow;
+    height: 100vh;
+    @include set_flex(center, center, column, nowrap);
+    & > * {
+      color: $dark_purple;
+    }
+
+    .content-wrapper {
+      @include set_flex(center, space-evenly, column);
+      height: 100%;
+      max-width: 450px;
+      margin: 3em 0;
+      .history-container {
+        @extend %montserrat;
+        line-height: 1.2;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 18px;
+        word-spacing: 2px;
+        width: 90%;
+        text-align: center;
+      }
+      .arrow-container {
+        width: 80%;
+        @include set_flex(center, space-between, row);
+        svg {
+          width: 90px;
+          height: auto;
+          path {
+            fill: $dark_purple;
+          }
+          &:nth-of-type(1) {
+            transform: scaleX(-1) rotate(25deg);
+          }
+          &:nth-of-type(2) {
+            transform: rotate(25deg);
+          }
+        }
+      }
+      .web-development-container {
+        font-size: 34px;
+        @extend %montserrat;
+        font-style: italic;
+        font-weight: bold;
+        text-transform: capitalize;
+        text-decoration: underline;
+      }
+    }
+
+    .arrow-down {
+      @include build_arrow();
+    }
+  }
+  //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+  //(((((((((((((((((( LANGUAGES SECTION )))))))))))))))))))))))))
+  .languages {
+    @include set_flex(center, space-evenly, column, nowrap);
+    @extend %montserrat;
+    font-weight: bold;
+    background-color: $imperial_red;
+    height: 100vh;
+    padding-top: 1em;
+
+    .first-paragraph,
+    .second-paragraph {
+      text-align: center;
+      letter-spacing: 1px;
+      color: $dark_purple;
+      font-size: 18px;
+      width: 85%;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    .second-paragraph {
+      margin-bottom: 1em;
+    }
+
+    .arrow-down-secondary {
+      background-image: url("../../img/icons/ARROW.svg");
+      background-repeat: no-repeat;
+      width: 64px;
+      height: 64px;
+      background-size: 133px;
+      background-position: center;
+      rotate: -45deg;
+    }
+
+    .bracket-container {
+      @include build_bracket();
+    }
+
+    .language-icon-container {
+
+      @include set_flex(row, center, row, wrap);
+      width: 300px;
+      margin: 0 auto;
+      svg {
+        animation: bounce 2s ease infinite;
+        height: 85px;
+        width: 50%;
+        path {
+          fill: $dark_purple;
+        }
+        &:nth-of-type(1){animation-delay: .2s;}
+        &:nth-of-type(2){animation-delay: .1s;}
+        &:nth-of-type(3){animation-delay: .3s;}
+        &:nth-of-type(4){animation-delay: .4s;}
+        &:nth-of-type(5){animation-delay: .5s;}
+        &:nth-of-type(6){animation-delay: .6s;}
+      }
+    }
+    .arrow-down {
+      @include set_flex(center, center);
+      svg {
+        @include build_arrow();
+      }
+    }
+  }
+  //((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))
+
+  //==================PROJECT SECTION===============================
+  .projects {
+    background-color: $purpureus;
+    .heading {
+      @extend %montserrat;
+      font-weight: bold;
+      text-align: center;
+      padding: 3.5em 0 1.5em 0;
+      font-size: 18px;
+      width: 360px;
+      margin: 0 auto;
+    }
+    .bracket {
+      @include build_bracket();
+    }
+    .project-container {
+      @include set_flex(center, center, row, wrap);
+      .project-card.mobile {
+        @include set_flex(center, space-between, column, nowrap);
+        box-shadow: $card_shadow;
+        background-color: $seasalt;
+        margin: 2em;
+        width: 300px;
+        height: 300px;
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: $card_shadow_active;
+        }
+        .project-img {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        header {
+          @extend %montserrat;
+          text-align: center;
+          letter-spacing: 1px;
+          font-size: 18px;
+          width: 90%;
+          margin: 0 auto;
+          padding-bottom: 0.2em;
+        }
+        a.cta {
+          @extend %montserrat;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 2.5em;
+          text-align: center;
+          background-color: $imperial_red;
+          padding: 0.3em 5em;
+          font-size: 14px;
+          text-decoration: none;
+          color: $seasalt;
+          font-weight: bold;
+          box-shadow: $cta_shadow;
+          &:hover {
+            box-shadow: $cta_shadow_active;
+          }
+        }
+      }
+    }
+    .arrow-down {
+      padding: 3em 0 1em 0;
+      svg {
+        @include build_arrow();
+      }
+    }
+  }
+  //===============================================================
+
+}
