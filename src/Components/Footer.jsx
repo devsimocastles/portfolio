@@ -5,7 +5,7 @@ import { ReactComponent as Email } from "../img/icons/envelope-solid.svg"
 
 export function Footer (){
     return (
-    <footer>
+    <footer id="contact">
             <header>
                 <h2>¿Como puedes contactarme?</h2>
             </header>
