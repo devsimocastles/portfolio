@@ -31,13 +31,13 @@ export function DesktopView() {
                                 <a href="#biography">Sobre mí</a>
                             </li>
                             <li>
-                                <a href="#">Lenguajes</a>
+                                <a href="#languages">Lenguajes</a>
                             </li>
                             <li>
-                                <a href="#">Proyectos</a>
+                                <a href="#projects">Proyectos</a>
                             </li>
                             <li>
-                                <a href="#">Contacto</a>
+                                <a href="#contact">Contacto</a>
                             </li>
                         </ul>
                         <div className="logo">
