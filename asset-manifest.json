@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/devsimocastles.github.io/portfolio/static/css/main.d9c398f7.css",
+    "main.js": "/devsimocastles.github.io/portfolio/static/js/main.0e7aa35a.js",
+    "static/media/hero-bg-mobile.jpg": "/devsimocastles.github.io/portfolio/static/media/hero-bg-mobile.5192ad630e840d1c752e.jpg",
+    "static/media/hero-bg.jpg": "/devsimocastles.github.io/portfolio/static/media/hero-bg.eaff5c8cb53a820c84eb.jpg",
+    "static/media/dev.png": "/devsimocastles.github.io/portfolio/static/media/dev.01d5e2ee450785052e4b.png",
+    "static/media/react.svg": "/devsimocastles.github.io/portfolio/static/media/react.f4d21d794054af8d20624a082749ef90.svg",
+    "static/media/node-js.svg": "/devsimocastles.github.io/portfolio/static/media/node-js.b44259d183582a642d14c10b98e4aac5.svg",
+    "static/media/php.svg": "/devsimocastles.github.io/portfolio/static/media/php.32c1e4678025b40c89f47de7923946ad.svg",
+    "static/media/logo-github.svg": "/devsimocastles.github.io/portfolio/static/media/logo-github.f0843d48b095543a71d4e4f6809ca9d6.svg",
+    "index.html": "/devsimocastles.github.io/portfolio/index.html",
+    "static/media/js.svg": "/devsimocastles.github.io/portfolio/static/media/js.bffe8173ed7f6082ea16c50903494f2d.svg",
+    "static/media/bracket.svg": "/devsimocastles.github.io/portfolio/static/media/bracket.5694cf90fa2f8d4a092c.svg",
+    "static/media/close.svg": "/devsimocastles.github.io/portfolio/static/media/close.599785d3d869c73c367c5cd081d2d986.svg",
+    "static/media/envelope-solid.svg": "/devsimocastles.github.io/portfolio/static/media/envelope-solid.5c4d5031358089786ad0f81c688d7504.svg",
+    "static/media/arrow-turn-down-solid.svg": "/devsimocastles.github.io/portfolio/static/media/arrow-turn-down-solid.631757becd746069cb5d1a02f0ed9eab.svg",
+    "static/media/css3-alt.svg": "/devsimocastles.github.io/portfolio/static/media/css3-alt.ab607ef91025f17cd23d0b09f471033b.svg",
+    "static/media/burger-menu.svg": "/devsimocastles.github.io/portfolio/static/media/burger-menu.fc12fbd678bea2ce4ec9524cbe12a170.svg",
+    "static/media/html5.svg": "/devsimocastles.github.io/portfolio/static/media/html5.2bdd7259d54032f442015503b1caff62.svg",
+    "static/media/placeholder.svg": "/devsimocastles.github.io/portfolio/static/media/placeholder.d6463781e0ebccfac9af1f9118b701fb.svg",
+    "static/media/ARROW.svg": "/devsimocastles.github.io/portfolio/static/media/ARROW.5b45f1a36ceef3ef633e.svg",
+    "static/media/down-arrow.svg": "/devsimocastles.github.io/portfolio/static/media/down-arrow.89240019a08c47cf02e42e7dfc7e0273.svg",
+    "main.d9c398f7.css.map": "/devsimocastles.github.io/portfolio/static/css/main.d9c398f7.css.map",
+    "main.0e7aa35a.js.map": "/devsimocastles.github.io/portfolio/static/js/main.0e7aa35a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9c398f7.css",
+    "static/js/main.0e7aa35a.js"
+  ]
+}
