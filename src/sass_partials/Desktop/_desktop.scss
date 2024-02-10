@@ -10,7 +10,7 @@
     height: 100vh;
     background-image: url("../../img/hero-bg.jpg");
     background-position: center;
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     @include set_flex(center, space-between, column, nowrap);
     header {
